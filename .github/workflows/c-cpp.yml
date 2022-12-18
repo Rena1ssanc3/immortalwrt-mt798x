@@ -19,8 +19,6 @@ jobs:
       run: ./scripts/feeds update -a
     - name: feed-install
       run: ./scripts/feeds install -a
-    - name: config
-      run: cp -f defconfig/mt7981-ax3000.config .config
     - name: make 
       run: make V=s
     - name: Deliver firmware
